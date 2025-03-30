@@ -13,17 +13,17 @@ export const CandleComponent: React.FC<CandleComponentProps> = ({elementPosition
 
     const candleVariants = {
         hidden: {
-            y: "-100vh", // Start above the screen
+            y: "-100vh",
             opacity: 0,
         },
         visible: {
-            y: 0, // Fall to the cake
+            y: 0,
             opacity: 1,
             transition: {
                 type: "spring",
                 stiffness: 50,
                 damping: 10,
-                duration: 1.5, // Customize the duration
+                duration: 1.5,
             },
         },
     };
